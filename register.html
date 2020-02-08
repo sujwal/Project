@@ -1,3 +1,36 @@
+<!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>Register for Membership Portal  </title>
+    </head>
+    <body>
+        <h1>Register for Membership Portal</h1>
+        <hr />
+        <form action="create_user.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <label>Username: </label>
+                <input required type="text" name="username" size="30" maxlength="12" placeholder="username" />
+
+                <br />
+
+                <label>Password: </label>
+                <input required type="password" name="password" size="30" maxlength="8" placeholder="password" />
+
+                <br />
+
+                <label>E-mail</label>
+                <input type="email" name="email" size="30" placeholder="email address" />
+
+                <br />
+
+            
+                <br />
+
+                <button name="login">
+                  <img width="100" src="./img/register_button.png" />
+                </button>
+            </fieldset>
+        </form>
+    </body>
 </html>
