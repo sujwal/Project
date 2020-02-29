@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!-- Bootstrap Stylesheet-->
     <link href="./navbarstyle.css" type="text/css" rel="stylesheet" />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
@@ -51,38 +52,34 @@
 <p>&nbsp;</p>
 <h2 style="text-align: center;">Sign in to Membership Portal</h2> &nbsp;
 
-<div class="container">
+<div class="container col-md-3">
   
-  <form class="form-horizontal" action="create_user.html">
-    <div class="form-group">
-      <div class="col-md-6">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-md-6">
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-    </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
-      <div class="col-md-6">        
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
+  
+<form action="action_page.php" method="post">
+  
 
+  <div class="container">
+    <div class="row">
+   
+          
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
 
 
 <div class="footer"> All rights reserved </div> <!--footer-->
