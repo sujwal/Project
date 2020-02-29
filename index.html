@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!-- Bootstrap Stylesheet-->
-
+    <link href="./navbarstyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg nav-tabs"> <!-- Bootstrap Stylesheet for Navbar-->
+  <nav class="navbar navbar-expand-lg nav-tabs my-navbar navbarhover"> <!-- Bootstrap Stylesheet for Navbar-->
     
     <a class="navbar-brand" href="#"> <!-- logo-->
         <img src="./Logo-random.jpg" width="30" height="25" alt="" />
       </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="nav collapse navbar-collapse justify-content-center " id="navbarText"> <!-- Menu Items on the right of page-->
+    <div class="nav collapse navbar-collapse justify-content-center my-navbar navlink navbarhover" id="navbarText"> <!-- Menu Items-->
       <li class="nav-item active">
-<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        
+        <a class="nav-link my-navbar navlink" href="./index.html" > Home <span class="sr-only">(current)</span></a>
 </li>
 
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <!-- Dropdown Menu items-->
+<li class="nav-item dropdown my-navbar"> <!-- nav dropdown-->
+  <a class="nav-link dropdown-toggle my-navbar navlink" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <!-- Dropdown Menu items-->
     Membership Portal
   </a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    <a class="dropdown-item" href="#">Membership Status</a>
-    <a class="dropdown-item" href="#">Renew Membership</a>
+  <div class="dropdown-menu my-navbar navlink">
+    <a class="dropdown-item my-navbar navlink" href="#">Membership Status</a>
+    <a class="dropdown-item my-navbar navlink" href="#">Renew Membership</a>
    </div>
 </li>
 
 </li>
 <li class="nav-item"> <!-- Dropdown Sub Menu items-->
-<a class="nav-link" href="./signin.html">Sign In</a>
+<a class="nav-link my-navbar navlink navbar-hover" href="./signin.html">Sign In</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="./register.html">Register</a>
+<a class="nav-link my-navbar navlink navbar-hover" href="./register.html">Register</a>
 </li>
 </ul>
           </div>
   </nav>
 </ul>
-
-
         </script>
     </head>
 
@@ -54,22 +54,9 @@
   </div>
 </div>
 
+<div class="footer"> All rights reserved </div> <!--footer-->
 
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-light" style="background-color: #087030;"> <!--footer-->
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-     
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-             <span> <Footer>all rights reserved</Footer>  </span></color>
-            </li>
-                    </ul>
-
-    </div>
-  </nav>
-
+<!--default bootsrap JS scripts-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

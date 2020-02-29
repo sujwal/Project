@@ -1,0 +1,38 @@
+
+.my-navbar {
+  background-color:rgb(145, 142, 141);
+}
+
+.navlink {
+        color: rgba(4, 252, 37, 0.897);
+         }   
+       
+.navbartoggler {
+border-color: white;
+}
+          
+.navbartoggle:hover .icon-bar {
+    background-color: #f80808;
+}        
+
+.navbarhover:hover {
+border-color: rgb(23, 235, 86);
+color: rgb(2, 2, 2);
+}
+
+.navfooter {
+    text-align: center;
+    color: rgba(4, 252, 37, 0.897);
+    border-color: rgb(145, 142, 141);
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(145, 142, 141);
+  color:rgba(4, 252, 37, 0.897);
+  text-align: center;
+}
