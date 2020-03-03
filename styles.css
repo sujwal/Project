@@ -1,45 +1,63 @@
-a {
-   color: rgb(245, 248, 245); text-decoration: none;
-  }
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
 
-  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 5px 0px;
+  margin: 15px 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+ 
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 10px;
+  margin: 5px 0;
+  background-color: #f44336;
+}
 
 
-body {
-    background-color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    justify-content: center;
-    
-  }
+/* Add padding to containers */
+.container {
+  padding: 20px;
+}
 
-h1 {
-    font-size: 90px;
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
   }
-  h2 {
-    font-size: 40px;
+  .cancelbtn {
+    width: 100%;
   }
-  p {
-    font-size: 36px;
-  }
-  
-  button {
-      color: white;
-      font-size: 90%;
-      border-radius: 6px;
-      border: double;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      background: rgb(28, 184, 65);
-      padding: 10px;
-      outline: none;
-      cursor: pointer;
-  }
-  
-  button:hover {
-    background: rgb(66, 184, 221);
-    
-  }
+}
+
+

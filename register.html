@@ -1,110 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!-- Bootstrap Stylesheet-->
-<!-- Custom styles for this template -->
+    <link href="./navbarstyle.css" type="text/css" rel="stylesheet" />
+    <link href="./signupstyles.css" type="text/css" rel="stylesheet" />
 </head>
-
 <body>
+
+  <nav class="navbar navbar-expand-lg nav-tabs my-navbar navbarhover"> <!-- Bootstrap Stylesheet for Navbar-->
     
-    <nav class="navbar navbar-expand-lg nav-tabs"> <!-- Bootstrap Stylesheet for Navbar-->
-    
-        <a class="navbar-brand" href="#"> <!-- logo-->
-            <img src="./Logo-random.jpg" width="30" height="25" alt="" />
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="nav collapse navbar-collapse justify-content-end " id="navbarText"> <!-- Menu Items on the right of page-->
-                    <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-    
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <!-- Dropdown Menu items-->
-                  Membership Portal
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Membership Status</a>
-                  <a class="dropdown-item" href="#">Renew Membership</a>
-                 </div>
-              </li>
-    
-          </li>
-            <li class="nav-item"> <!-- Dropdown Sub Menu items-->
-              <a class="nav-link" href="./signin.html">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register.html">Register</a>
-            </li>
-          </ul>
-              </div>
-      </nav>
-    </ul>
+    <a class="navbar-brand" href="#"> <!-- logo-->
+        <img src="./Logo-random.jpg" width="30" height="25" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="nav collapse navbar-collapse justify-content-center my-navbar navlink navbarhover" id="navbarText"> <!-- Menu Items-->
+      <li class="nav-item active">
+        
+        <a class="nav-link my-navbar navlink" href="./index.html" > Home <span class="sr-only">(current)</span></a>
+</li>
+
+<li class="nav-item dropdown my-navbar"> <!-- nav dropdown-->
+  <a class="nav-link dropdown-toggle my-navbar navlink" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"> <!-- Dropdown Menu items-->
+    Membership Portal
+  </a>
+  <div class="dropdown-menu my-navbar navlink" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item my-navbar navlink" href="#">Membership Status</a>
+    <a class="dropdown-item my-navbar navlink" href="#">Renew Membership</a>
+   </div>
+</li>
 
 
+</li>
+<li class="nav-item"> <!-- Dropdown Sub Menu items-->
+<a class="nav-link my-navbar navlink navbar-hover" href="./signin.html">Sign In</a>
+</li>
+<li class="nav-item">
+<a class="nav-link my-navbar navlink navbar-hover" href="./register.html">Register</a>
+</li>
+</ul>
+          </div>
+  </nav>
+</ul>
 
-    <h1>Register for Membership Portal</h1>
+    </head>
+
+    <form action="action_page.php" method="post"> 
+    <p>&nbsp;</p>
+    <h2 style="text-align: center;">Sign up to Membership Portal</h2> &nbsp;
     <hr />
 
-    <div class="container register">
-        <div class="row">
-            <div class="col-md-3 register-left">
-                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
-                <h3>Welcome</h3>
-                <p>You are 30 seconds away from registering with Membership Portal!</p>
-                        </div>
-            <div class="col-md-9 register-right">
-                <ul class="nav nav-tabs nav-justified" id="myTab">
-                  
-                   
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3 class="register-heading">Registration Form</h3>
-                        <div class="row register-form">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                </div>
-                                <div class="form-group">
-                                 <input type="email" class="form-control" placeholder="Email *" id="email" />
-                                </div>
-                                            
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password *" id="pwd" />
-                                </div>  
-                  
-                  
-                  <div class="col-md-12">
-                        <div class="form-group"></div>
-                    
-                    <input type="submit" class="btnRegister"  value="Register"/>
-                            </div>
-
-                            <div class="col-md-62">
-                                <div class="form-group"></div>
-                            <input type="clear" class="btnClear"  value="Clear"/>
-
-                        </div>
-                    </div>
-                  
-    </div>
-
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-light" style="background-color: #087030;">  <!--footer-->
+<div id="signup-box"> <!--signup Box-->
+  <div class="left">
+    <h1>Sign up</h1>
     
-        <span> <Footer> all rights reserved</Footer>  </span>
-      
-    </div>
-    </nav>
+    <label for="uname"><b>Username</b></label> <!--signup Box fields-->
+    <input type="text" name="username" placeholder="Username" required />
+    <label for="email"><b>Email</b></label>
+    <input type="text" name="email" placeholder="E-mail"  required/>
+    <label for="password"><b>Password</b></label>
+    <input type="password" name="password" placeholder="Password" required />
+    <label for="password"><b>Retype Password</b></label>
+    <input type="password" name="password2" placeholder="Retype password" required />
+    
+    <input type="submit" name="signup_submit" value="Sign me up" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Already Have an Account?<br />
+     <button class="loginin" value="Log in" onclick="window.location.href='./signin.html'"> Log In</button>
+            <!-- <button class="loginin" href="./signin.html"> Log in </button>-->
+          
+  </div>
+  <div class="or">OR</div>
+ 
+</div>
+
+    </nav> <!--JS Bootstrap Script-->
         <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -118,7 +94,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-
+        <div class="footer"> All rights reserved </div> <!--footer-->
         
 </body>
 </html>
