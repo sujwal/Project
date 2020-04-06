@@ -49,26 +49,39 @@
 
     </head>
 
-    <form action="action_page.php" method="post"> 
+    <form action="action_page.php" method="post" class="was-validated"> 
     <p>&nbsp;</p>
+    
     <h2 style="text-align: center;">Sign up to Membership Portal</h2> &nbsp;
     <hr />
 
 <div id="signup-box"> <!--signup Box-->
   <div class="left">
     <h1>Sign up</h1>
-    
+    <div class="form-group">
     <label for="uname"><b>Username</b></label> <!--signup Box fields-->
     <input type="text" name="username" placeholder="Username" required />
+    <div class="valid-feedback">Please go to next field.</div>
+    </div>
+    <div class="form-group">
     <label for="email"><b>Email</b></label>
     <input type="text" name="email" placeholder="E-mail"  required/>
+    <div class="valid-feedback">Please go to next field.</div>
+  </div>
+  <div class="form-group">
     <label for="password"><b>Password</b></label>
     <input type="password" name="password" placeholder="Password" required />
+    <div class="valid-feedback">Please go to next field.</div>
+ </div>
+ <div class="form-group">
     <label for="password"><b>Retype Password</b></label>
     <input type="password" name="password2" placeholder="Retype password" required />
-    
+    <div class="valid-feedback">Please go to next field.</div>
+     </div>
+
     <input type="submit" name="signup_submit" value="Sign me up" />
   </div>
+
   
   <div class="right">
     <span class="loginwith">Already Have an Account?<br />
@@ -81,7 +94,28 @@
 </div>
 
     </nav> <!--JS Bootstrap Script-->
-        <script
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Get the forms we want to add validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+    
+    <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

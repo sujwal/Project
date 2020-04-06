@@ -1,14 +1,14 @@
 
 .my-navbar {
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(10, 10, 10);
 }
 
 .navlink {
-        color: rgba(4, 252, 37, 0.897);
+        color: rgba(249, 250, 249, 0.897);
          }   
        
 .navbartoggler {
-border-color: white;
+border-color: rgb(250, 3, 3);
 }
           
 .navbartoggle:hover .icon-bar {
@@ -32,7 +32,7 @@ color: rgb(2, 2, 2);
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(145, 142, 141);
-  color:rgba(4, 252, 37, 0.897);
+  background-color:rgb(10, 10, 10);
+  color: rgba(249, 250, 249, 0.897);
   text-align: center;
 }
