@@ -29,7 +29,7 @@ body {
     position: relative;
     margin: 5% auto;
     width: 300px;
-    height: 400px;
+    height: 450px;
     background: #FFF;
     border-radius: 1px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -164,7 +164,7 @@ input[type="submit"]:active, input[type="submit-signin"]:active {
   .loginin {
     margin-top: 20px;
     width: 120px;
-    height: 50px;
+    height: 80px;
     margin-left: 20px;
     padding: 10px;
     background: #16a085;
