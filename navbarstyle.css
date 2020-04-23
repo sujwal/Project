@@ -15,10 +15,7 @@ border-color: rgb(250, 3, 3);
     background-color: #f80808;
 }        
 
-.navbarhover:hover {
-border-color: rgb(23, 235, 86);
-color: rgb(2, 2, 2);
-}
+
 
 .navfooter {
     text-align: center;
